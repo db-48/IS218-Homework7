@@ -2,7 +2,11 @@
 
 For this assignment you will be combining Docker with Python to create a program that generates a QR code PNG file that
 contains a URL. The QR code can be viewed with the camera on your phone to allow a user to click on it and send them to
-the target website. You must make your program generate a QR code that takes someone to your GitHub homepage i.e. https://github.com/kaw393939 <replace mine with yours>
+the target website. You must make your program generate a QR code that takes someone to your GitHub homepage i.e. https://github.com/woffee (replace mine with yours)
+
+![QRCode](QRCode_demo.png)
+
+(replace my QRCode with yours)
 
 ## Setup
 1.  Goto Docker.com and Install docker - [https://www.docker.com/get-started/](here)
@@ -15,7 +19,9 @@ the target website. You must make your program generate a QR code that takes som
 PUT YOUR QR CODE IMAGE
 
 2.  Add an image of viewing the log of successfully creating the QR code below.
- PUT YOUR LOG IMAGE HERE
+
+PUT YOUR LOG IMAGE HERE
+
 ## Lesson Video
 
 1.  [Scaling and Backend Software Engineering](https://youtu.be/v3LxCmYQVS4)
@@ -39,10 +45,17 @@ This command builds a Docker image named `my-qr-app` from the Dockerfile in the 
 
 ### Running the Container with Default Settings
 ```sh
-docker run -d --name qr-generator my-qr-app
+docker run --rm --name qr-generator my-qr-app
 ```
 
 Runs your QR code generator application in detached mode (`-d`) with a container named `qr-generator`.
+
+### Sharing a Volume for QR Code Output
+
+```sh
+docker run --rm --name qr-generator -v .:/app my-qr-app
+```
+Mounts a host directory to the container for storing QR codes.
 
 ### Setting Environment Variables for QR Code Customization
 
@@ -57,14 +70,7 @@ docker run -d --name qr-generator \
 ```
 Customizes the QR code generation settings through environment variables.
 
-### Sharing a Volume for QR Code Output
 
-```sh
-docker run -d --name qr-generator \
-  -v /host/path/for/qr_codes:/app/qr_codes \
-  my-qr-app
-```
-Mounts a host directory to the container for storing QR codes.
 
 ### Combining Volume Sharing and Environment Variables
 
