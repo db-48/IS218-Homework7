@@ -1,3 +1,3 @@
+![QR Code](qr_codes/QRCode_20241106020321.png)
 
-![qr_codes/QRCode_20241106020321](https://github.com/db-48)
 
