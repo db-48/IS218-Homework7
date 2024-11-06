@@ -1,4 +1,6 @@
-Docker and Python
+# QR Code to My GitHub Page
+
+![QR Code to GitHub](qr_codes/QRCode_20241106020321.png)
 
 For this assignment you will be combining Docker with Python to create a program that generates a QR code PNG file that
 contains a URL. The QR code can be viewed with the camera on your phone to allow a user to click on it and send them to
@@ -126,31 +128,3 @@ docker stop container_name
 ```
 **Removing a Container**
 
-```sh
-docker rm container_name
-```
-**Listing Docker Images**
-
-
-```sh
-docker images
-```
-Lists all Docker images available on your machine.
-
-**Removing a Docker Image**
-
-
-```sh
-docker rmi image_name
-```
-
-Removes a Docker image.
-
-**Viewing Logs of a Container**
-
-```sh
-docker logs container_name
-```
-Displays the logs from a running or stopped container.
-
-These commands cover the essentials of building, running, and managing Docker containers and images, along with specific examples for your QR code generation application.
