@@ -1,6 +1,3 @@
-# QR Code to My GitHub Page
-
-![QR Code to GitHub](qr_codes/QRCode_20241106020321.png)
 
 For this assignment you will be combining Docker with Python to create a program that generates a QR code PNG file that
 contains a URL. The QR code can be viewed with the camera on your phone to allow a user to click on it and send them to
@@ -128,3 +125,7 @@ docker stop container_name
 ```
 **Removing a Container**
 
+=======
+
+![QRCode_20241106020321](https://github.com/db-48)
+>>>>>>> 3639ea670aea7aa47970a66d8302981030447883
