@@ -7,6 +7,7 @@ __pycache__/
 qr_codes
 # C extensions
 *.so
+.DS_Store
 
 # Distribution / packaging
 .Python
