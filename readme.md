@@ -1,3 +1,3 @@
 # QR Code to My GitHub Page
 
-![QR Code to GitHub](qr_codes/QRCode_20241106020321.png)
+![QRCode_20241106020321](https://github.com/user-attachments/assets/67e31abb-a2dd-458e-a4cd-11534d11dd43)
